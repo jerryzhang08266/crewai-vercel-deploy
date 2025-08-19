@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewAI 一键部署到 Vercel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .deploy-btn {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .deploy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .github-btn {
+            background: #333;
+        }
+        
+        .features {
+            margin-top: 40px;
+            text-align: left;
+        }
+        
+        .feature {
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+        
+        .feature::before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+        
+        .steps {
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .step {
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+        
+        .step::before {
+            content: counter(step-counter) ". ";
+            counter-increment: step-counter;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CrewAI</h1>
+        <p>一键部署到 Vercel 平台</p>
+        
+        <a href="https://vercel.com/new/clone?repository-url=https://github.com/your-username/crewai-vercel-deploy" 
+           class="deploy-btn" target="_blank">
+            🚀 Deploy to Vercel
+        </a>
+        
+        <a href="https://github.com/your-username/crewai-vercel-deploy" 
+           class="deploy-btn github-btn" target="_blank">
+            📁 View on GitHub
+        </a>
+        
+        <div class="features">
+            <h3>✨ 功能特性</h3>
+            <div class="feature">多智能体协作系统</div>
+            <div class="feature">角色扮演AI智能体</div>
+            <div class="feature">Web界面交互</div>
+            <div class="feature">一键部署到Vercel</div>
+            <div class="feature">完全免费使用</div>
+        </div>
+        
+        <div class="steps">
+            <h3>📋 部署步骤</h3>
+            <div class="step">点击上方 "Deploy to Vercel" 按钮</div>
+            <div class="step">使用GitHub账户登录Vercel</div>
+            <div class="step">选择导入项目到您的GitHub</div>
+            <div class="step">等待自动部署完成</div>
+            <div class="step">访问生成的URL开始使用</div>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.7;">
+            注意：首次部署需要先将项目Fork到您的GitHub账户
+        </p>
+    </div>
+</body>
+</html>
+
